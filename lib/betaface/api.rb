@@ -109,7 +109,7 @@ module Betaface
     ##
     # https://www.betafaceapi.com/service_json_ssl.svc/SetPerson
     # Assign person name (John Doe@mynamespace.com) to one or more face ids
-    def set_person(faces_uid, person_id)
+    def set_person(faces_uids, person_id)
       @client.post "/service_json_ssl.svc/SetPerson", {faces_uids:faces_uids,person_id:person_id}
     end
 
